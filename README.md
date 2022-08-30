@@ -14,17 +14,22 @@ npm install --save react-simple-rotating-text
 
 ```jsx
 import React, { Component } from 'react'
-
-import MyComponent from 'react-simple-rotating-text'
+import RotatingText from 'react-simple-rotating-text'
 import 'react-simple-rotating-text/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <RotatingText texts={["hello", "world"]} />
   }
 }
 ```
 
+| propery  | description  | required  | default  | allowed values  |
+|---|---|---|---|---|
+|  texts | An array of strings  | true  |   |   |
+|  color | Hex value of color  |  false | black  |   |
+|  delay | an integer value for delay  | false  | 2.5s  |   |
+|  type | type of animation  | false  | vertical  | horzontal or vertical  |
 ## License
 
 MIT © [dilpreetsio](https://github.com/dilpreetsio)

@@ -1,9 +1,74 @@
-/* add css module styles here (optional) */
-
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.rotatingWrapper{
+  position: relative;
+  display: inline;
 }
+
+.rotatingText{
+  text-indent: 8px;
+}
+
+.rotatingText span{
+  animation: vertical 12.5s linear infinite 0s;
+  -ms-animation: vertical 12.5s linear infinite 0s;
+  -webkit-animation: vertical 12.5s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+@-moz-keyframes vertical{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateY(-30px); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 0; -moz-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes vertical{
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateY(-30px); }
+  10% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 1; -webkit-transform: translateY(0px); }
+  30% { opacity: 0; -webkit-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes vertical{
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateY(-30px); }
+  10% { opacity: 1; -ms-transform: translateY(0px); }
+  25% { opacity: 1; -ms-transform: translateY(0px); }
+  30% { opacity: 0; -ms-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes horizontal{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateX(-30px); }
+  10% { opacity: 1; -moz-transform: translateX(0px); }
+  25% { opacity: 1; -moz-transform: translateX(0px); }
+  30% { opacity: 0; -moz-transform: translateX(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes horizontal{
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateX(-30px); }
+  10% { opacity: 1; -webkit-transform: translateX(0px); }
+  25% { opacity: 1; -webkit-transform: translateX(0px); }
+  30% { opacity: 0; -webkit-transform: translateX(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes horizontal{
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateX(-30px); }
+  10% { opacity: 1; -ms-transform: translateX(0px); }
+  25% { opacity: 1; -ms-transform: translateX(0px); }
+  30% { opacity: 0; -ms-transform: translateX(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+

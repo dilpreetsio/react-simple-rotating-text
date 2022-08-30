@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-simple-rotating-text'
+import { RotatingText } from 'react-simple-rotating-text'
 import 'react-simple-rotating-text/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <RotatingText texts={["one", "two", "three"]} />
 }
 
 export default App
