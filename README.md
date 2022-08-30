@@ -23,6 +23,7 @@ class Example extends Component {
   }
 }
 ```
+## Properties
 
 | propery  | description  | required  | default  | allowed values  |
 |---|---|---|---|---|
