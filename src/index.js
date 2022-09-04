@@ -24,7 +24,7 @@ const RotatingText = ({
 
   return (
     <span className={styles.rotatingText}>
-      {texts.map((text, i) => createText(text, i * delay))}
+      {texts.map((text, i) => createText(text, i * delay))} &nbsp;
     </span>
   )
 }

@@ -3,16 +3,11 @@
   display: inline;
 }
 
-.rotatingText{
-  text-indent: 8px;
-}
-
 .rotatingText span{
   animation: vertical 12.5s linear infinite 0s;
   -ms-animation: vertical 12.5s linear infinite 0s;
   -webkit-animation: vertical 12.5s linear infinite 0s;
   opacity: 0;
-  overflow: hidden;
   position: absolute;
 }
 
