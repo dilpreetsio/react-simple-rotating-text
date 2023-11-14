@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# react-simple-rotating-text
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A simple rotating animation text component
 
-Currently, two official plugins are available:
+[![NPM](https://img.shields.io/npm/v/react-simple-rotating-text.svg)](https://www.npmjs.com/package/react-simple-rotating-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Install
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm install --save react-simple-rotating-text
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+```jsx
+import React, { Component } from 'react'
+import RotatingText from 'react-simple-rotating-text'
+import 'react-simple-rotating-text/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <RotatingText texts={['hello', 'world']} />
+  }
+}
+```
+
+## Properties
+
+| propery | description                | required | default  | allowed values        |
+| ------- | -------------------------- | -------- | -------- | --------------------- |
+| texts   | An array of strings        | true     |          |                       |
+| color   | Hex value of color         | false    | black    |                       |
+| delay   | an integer value for delay | false    | 2.5s     |                       |
+| type    | type of animation          | false    | vertical | horzontal or vertical |
+
+## License
+
+MIT © [dilpreetsio](https://github.com/dilpreetsio)
