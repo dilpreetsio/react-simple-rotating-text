@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-simple-rotating-text.svg)](https://www.npmjs.com/package/react-simple-rotating-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![Demo gif](/demo.gif)
+
 ## Install
 
 ```bash
@@ -26,12 +28,13 @@ class Example extends Component {
 
 ## Properties
 
-| propery | description                | required | default  | allowed values        |
-| ------- | -------------------------- | -------- | -------- | --------------------- |
-| texts   | An array of strings        | true     |          |                       |
-| color   | Hex value of color         | false    | black    |                       |
-| delay   | an integer value for delay | false    | 2.5s     |                       |
-| type    | type of animation          | false    | vertical | horzontal or vertical |
+| propery   | description                | required | default  | allowed values        |
+| --------- | -------------------------- | -------- | -------- | --------------------- |
+| texts     | An array of strings        | true     |          |                       |
+| color     | Hex value of color         | false    | black    | hex code of color     |
+| duratrion | duration of the animation  | false    | 2.5s     | number                |
+| direction | direction of animation     | false    | vertical | horzontal or vertical |
+| className | Custom classes for styling | false    |          |
 
 ## License
 

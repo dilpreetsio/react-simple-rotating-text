@@ -1,25 +1,26 @@
 import React from 'react'
-import RotatingText from '../../src/lib/components/react-simple-rotating-text'
-
+import { RotatingText } from 'react-simple-rotating-text'
 const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
         <h1
           style={{
+            padding: '10px',
             fontSize: '3rem',
-            fontWeight: 400,
+            fontWeight: 800,
             lineHeight: 1.2,
             textAlign: 'center'
           }}
         >
-          Create beautiful{' '}
+          Beautiful rotating{' '}
           <RotatingText
-            texts={['demo videos', 'product videos', 'marketing videos']}
-            delay={2}
+            texts={['One', 'Two', 'Three', 'Four', 'Five']}
+            duration={1.5}
+            className='gradient-text'
           />
           <br />
-          with the app
+          texts
         </h1>
       </header>
     </div>

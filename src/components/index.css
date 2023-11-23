@@ -1,0 +1,57 @@
+.rotating-text-container {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.rotating-text-container span {
+  opacity: 0;
+  grid-row: 1;
+  grid-column: 1;
+  gap: 0;
+  position: absolute;
+}
+
+@keyframes vertical-rotate {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes horizontal-rotate {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
