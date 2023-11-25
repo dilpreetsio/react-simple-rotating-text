@@ -16,7 +16,7 @@ npm install --save react-simple-rotating-text
 
 ```jsx
 import React, { Component } from 'react'
-import RotatingText from 'react-simple-rotating-text'
+import { RotatingText } from 'react-simple-rotating-text'
 import 'react-simple-rotating-text/dist/index.css'
 
 class Example extends Component {
