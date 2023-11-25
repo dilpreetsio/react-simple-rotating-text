@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-simple-rotating-text.svg)](https://www.npmjs.com/package/react-simple-rotating-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![Demo gif](/demo.gif)
+![Demo gif](https://raw.githubusercontent.com/dilpreetsio/react-simple-rotating-text/main/demo.gif)
 
 ## Install
 

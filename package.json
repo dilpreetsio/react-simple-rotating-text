@@ -1,7 +1,7 @@
 {
   "name": "react-simple-rotating-text",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./dist/index.umd.js",
   "exports": {
@@ -10,6 +10,15 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "keywords": [
+    "react",
+    "react components",
+    "rotating text",
+    "animated text",
+    "react-rotating-text",
+    "react-rotating-text-component",
+    "text animation"
+  ],
   "scripts": {
     "dev": "vite",
     "build:css": "copyup 'src/lib/components/**/*.css' dist/css",
