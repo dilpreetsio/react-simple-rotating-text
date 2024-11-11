@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1
+        <div
           style={{
             padding: '10px',
             fontSize: '3rem',
@@ -20,9 +20,7 @@ const App = () => {
             className='gradient-text'
             direction='vertical'
           />
-          <br />
-          texts
-        </h1>
+        </div>
       </header>
     </div>
   )

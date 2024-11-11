@@ -17,6 +17,9 @@ const RotatingText = ({
 }: Props) => {
   const containerRef = useRef<HTMLSpanElement>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const word = [...texts].sort(function (a, b) {
+    return b.length - a.length
+  })[0]
 
   const createTextElement = (text: string, startTime: number) => {
     const textElement = document.createElement('span')
@@ -48,7 +51,13 @@ const RotatingText = ({
     return () => clearInterval(timer)
   }, [])
 
-  return <span className='rotating-text-container' ref={containerRef}></span>
+  return (
+    <span>
+      <span className='rotating-text-container' ref={containerRef}></span>
+
+      <span style={{ opacity: '0' }}> {word}</span>
+    </span>
+  )
 }
 
 export default RotatingText
