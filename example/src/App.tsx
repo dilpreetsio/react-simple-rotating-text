@@ -16,8 +16,9 @@ const App = () => {
           Beautiful rotating{' '}
           <RotatingText
             texts={['One', 'Two', 'Three', 'Four', 'Five']}
-            duration={3}
+            duration={1.5}
             className='gradient-text'
+            direction='vertical'
           />
           <br />
           texts

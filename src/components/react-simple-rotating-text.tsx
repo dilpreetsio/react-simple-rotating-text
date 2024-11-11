@@ -21,7 +21,7 @@ const RotatingText = ({
   const createTextElement = (text: string, startTime: number) => {
     const textElement = document.createElement('span')
     textElement.innerHTML = `&nbsp;${text}&nbsp;`
-    textElement.style.animation = `${direction}-rotate ${duration * texts.length}s linear infinite 0s`
+    textElement.style.animation = `${direction}-rotate ${duration * texts.length}s ease-in-out infinite 0s`
     textElement.style.animationDelay = `${startTime}s`
     textElement.style.color = color || 'inherit'
     textElement.className = className || ''
