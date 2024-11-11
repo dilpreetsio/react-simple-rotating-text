@@ -1,5 +1,5 @@
 import React from 'react'
-import { RotatingText } from 'react-simple-rotating-text'
+import { RotatingText } from '../../src/lib'
 const App = () => {
   return (
     <div className='App'>
@@ -16,7 +16,7 @@ const App = () => {
           Beautiful rotating{' '}
           <RotatingText
             texts={['One', 'Two', 'Three', 'Four', 'Five']}
-            duration={1.5}
+            duration={3}
             className='gradient-text'
           />
           <br />
