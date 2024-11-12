@@ -1,6 +1,7 @@
 .rotating-text-container {
   position: absolute;
   white-space: nowrap;
+  margin-left: 1rem;
 }
 
 .rotating-text-container span {
@@ -16,20 +17,14 @@
     opacity: 0;
     transform: translateY(-20px);
   }
-  5% {
+  25%,
+  75% {
     opacity: 1;
     transform: translateY(0px);
-  }
-  15% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    transform: translateY(20px);
   }
   100% {
     opacity: 0;
+    transform: translateY(20px);
   }
 }
 
@@ -38,19 +33,13 @@
     opacity: 0;
     transform: translateX(-20px);
   }
-  5% {
+  25%,
+  75% {
     opacity: 1;
     transform: translateX(0px);
-  }
-  15% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  20% {
-    opacity: 0;
-    transform: translateX(20px);
   }
   100% {
     opacity: 0;
+    transform: translateX(20px);
   }
 }

@@ -13,11 +13,11 @@ const App = () => {
             textAlign: 'center'
           }}
         >
-          Beautiful rotating{' '}
+          Beautiful rotating
           <RotatingText
             texts={['One', 'Two', 'Three', 'Four', 'Five']}
+            backgroundColors={['red', 'blue', 'green', 'yellow', 'black']}
             duration={1.5}
-            className='gradient-text'
             direction='vertical'
           />
         </div>

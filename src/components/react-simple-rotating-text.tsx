@@ -6,6 +6,9 @@ interface Props {
   className?: string
   color?: string
   direction?: 'vertical' | 'horizontal'
+  backgroundColors?: string[]
+  colors?: string[]
+  animateByLetters?: boolean
 }
 
 const RotatingText = ({
@@ -13,7 +16,10 @@ const RotatingText = ({
   duration = 2.5,
   direction = 'vertical',
   className,
-  color
+  color,
+  backgroundColors,
+  colors,
+  animateByLetters = false
 }: Props) => {
   const containerRef = useRef<HTMLSpanElement>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,10 +29,16 @@ const RotatingText = ({
 
   const createTextElement = (text: string, startTime: number) => {
     const textElement = document.createElement('span')
-    textElement.innerHTML = `&nbsp;${text}&nbsp;`
-    textElement.style.animation = `${direction}-rotate ${duration * texts.length}s ease-in-out infinite 0s`
+    textElement.innerHTML = `${text}`
+    textElement.style.animation = `${direction}-rotate ${duration}s ease-in-out infinite 0s`
     textElement.style.animationDelay = `${startTime}s`
-    textElement.style.color = color || 'inherit'
+    textElement.style.padding = `0 .5rem`
+    textElement.style.color =
+      colors && colors.length > 0 ? colors[currentIndex] : color || '#fff'
+    textElement.style.backgroundColor =
+      backgroundColors && backgroundColors.length > 0
+        ? backgroundColors[currentIndex]
+        : ''
     textElement.className = className || ''
     return textElement
   }
@@ -52,11 +64,10 @@ const RotatingText = ({
   }, [])
 
   return (
-    <span>
+    <>
       <span className='rotating-text-container' ref={containerRef}></span>
-
       <span style={{ opacity: '0' }}> {word}</span>
-    </span>
+    </>
   )
 }
 
