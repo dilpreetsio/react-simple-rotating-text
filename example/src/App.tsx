@@ -9,7 +9,6 @@ const App = () => {
             padding: '10px',
             fontSize: '3rem',
             fontWeight: 800,
-            lineHeight: 1.2,
             textAlign: 'center'
           }}
         >
@@ -17,8 +16,9 @@ const App = () => {
           <RotatingText
             texts={['One', 'Two', 'Three', 'Four', 'Five']}
             backgroundColors={['red', 'blue', 'green', 'yellow', 'black']}
-            duration={1.5}
-            direction='vertical'
+            duration={2}
+            animation='slide'
+            direction='horizontal'
           />
         </div>
       </header>

@@ -12,7 +12,7 @@
   position: absolute;
 }
 
-@keyframes vertical-rotate {
+@keyframes vertical-slide {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -28,7 +28,7 @@
   }
 }
 
-@keyframes horizontal-rotate {
+@keyframes horizontal-slide {
   0% {
     opacity: 0;
     transform: translateX(-20px);
@@ -41,5 +41,34 @@
   100% {
     opacity: 0;
     transform: translateX(20px);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
   }
 }

@@ -9,7 +9,10 @@ interface Props {
   backgroundColors?: string[]
   colors?: string[]
   animateByLetters?: boolean
+  animation?: string
 }
+
+const ANIMATION_NAMES = ['fade', 'slide', 'scale']
 
 const RotatingText = ({
   texts,
@@ -19,7 +22,7 @@ const RotatingText = ({
   color,
   backgroundColors,
   colors,
-  animateByLetters = false
+  animation = 'fade'
 }: Props) => {
   const containerRef = useRef<HTMLSpanElement>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -27,10 +30,25 @@ const RotatingText = ({
     return b.length - a.length
   })[0]
 
+  const getAnimationName = () => {
+    if (ANIMATION_NAMES.includes(animation.toLowerCase())) {
+      if (
+        animation.toLowerCase() == 'fade' ||
+        animation.toLowerCase() == 'scale'
+      ) {
+        return animation.toLowerCase()
+      } else {
+        return `${direction}-${animation}`
+      }
+    } else {
+      console.error('Missing animation name')
+    }
+  }
+
   const createTextElement = (text: string, startTime: number) => {
     const textElement = document.createElement('span')
     textElement.innerHTML = `${text}`
-    textElement.style.animation = `${direction}-rotate ${duration}s ease-in-out infinite 0s`
+    textElement.style.animation = `${getAnimationName()} ${duration}s ease-in-out infinite 0s`
     textElement.style.animationDelay = `${startTime}s`
     textElement.style.padding = `0 .5rem`
     textElement.style.color =
