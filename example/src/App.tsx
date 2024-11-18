@@ -15,10 +15,10 @@ const App = () => {
           Beautiful rotating
           <RotatingText
             texts={['One', 'Two', 'Three', 'Four', 'Five']}
-            backgroundColors={['red', 'blue', 'green', 'yellow', 'black']}
+            backgroundColors={['red', 'blue', 'purple', 'wheat', 'green']}
             duration={2}
             animation='slide'
-            direction='horizontal'
+            direction='vertical'
           />
         </div>
       </header>

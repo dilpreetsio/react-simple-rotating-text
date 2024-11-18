@@ -1,7 +1,7 @@
 .rotating-text-container {
-  position: absolute;
+  position: relative;
   white-space: nowrap;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .rotating-text-container span {
@@ -9,6 +9,7 @@
   grid-row: 1;
   grid-column: 1;
   gap: 0;
+  left: 0;
   position: absolute;
 }
 

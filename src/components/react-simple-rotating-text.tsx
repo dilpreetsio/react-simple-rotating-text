@@ -52,7 +52,7 @@ const RotatingText = ({
     textElement.style.animationDelay = `${startTime}s`
     textElement.style.padding = `0 .5rem`
     textElement.style.color =
-      colors && colors.length > 0 ? colors[currentIndex] : color || '#fff'
+      colors && colors.length > 0 ? colors[currentIndex] : color || 'inherit'
     textElement.style.backgroundColor =
       backgroundColors && backgroundColors.length > 0
         ? backgroundColors[currentIndex]
@@ -82,10 +82,10 @@ const RotatingText = ({
   }, [])
 
   return (
-    <>
+    <span>
       <span className='rotating-text-container' ref={containerRef}></span>
-      <span style={{ opacity: '0' }}> {word}</span>
-    </>
+      <span style={{ opacity: '0' }}>{word}</span>
+    </span>
   )
 }
 
