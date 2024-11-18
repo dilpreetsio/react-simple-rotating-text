@@ -1,7 +1,6 @@
 .rotating-text-container {
   position: relative;
   white-space: nowrap;
-  margin-left: 0.5rem;
 }
 
 .rotating-text-container span {
