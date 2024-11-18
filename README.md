@@ -1,10 +1,14 @@
 # react-simple-rotating-text
 
-> A simple rotating animation text component
+> A simple rotating animation text component for react apps
+
 
 [![NPM](https://img.shields.io/npm/v/react-simple-rotating-text.svg)](https://www.npmjs.com/package/react-simple-rotating-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![Demo gif](https://raw.githubusercontent.com/dilpreetsio/react-simple-rotating-text/main/demo.gif)
+
+
+[Live demo](https://playcode.io/2152508)
 
 ## Install
 
