@@ -54,7 +54,7 @@ import 'react-simple-rotating-text/dist/index.css'
 class Example extends Component {
   render() {
     return <RotatingText texts={['hello', 'world']}
-      colors={['red', 'blue']}
+      backgroundColors={['red', 'blue']}
     />
   }
 }
